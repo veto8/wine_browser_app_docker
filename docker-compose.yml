@@ -1,0 +1,25 @@
+services:
+  tamuzapp:
+    container_name: winebrowserapp
+    image: myridia/wine_browser_app 
+    ports:
+      - "5800:5800"
+      - "5900:5900"      
+    volumes:
+      - /mnt/Tamuz8:/mnt/Tamuz8      
+    environment:
+     - DARK_MODE=1
+     - DISPLAY_WIDTH=1200
+     - DISPLAY_HEIGHT=800
+     - USER_ID=0
+     - GROUP_ID=0     
+     - STARTUP_SCRIPT=notepad 
+     - WEB_FILE_MANAGER=1
+     - WEB_FILE_MANAGER_ALLOWED_PATHS=/
+    tty: true
+
+
+
+
+
+    
