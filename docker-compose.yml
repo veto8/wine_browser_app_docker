@@ -8,7 +8,7 @@ services:
     volumes:
       #- ./tamuz/:/root/.wine/drive_c/tamuz
       - ./autohotkey:/root/.wine/drive_c/autohotkey
-      #- ./bom2excel:/root/.wine/drive_c/bom2excel  
+      - ./startapp.sh:/startapp.sh  
     environment:
      - DARK_MODE=1
      - DISPLAY_WIDTH=1200
